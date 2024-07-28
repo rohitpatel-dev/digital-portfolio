@@ -15,10 +15,10 @@ function ResumePage() {
 
   return (
     <div className="bg-white px-1">
-      <div className="max-w-7xl mx-auto items-center justify-center">
-        <div className="grid grid-cols-4 py-14">
+      <div className="md:max-w-7xl mx-auto max-w-sm ">
+        <div className="grid md:grid-cols-4  py-14 ">
           <div className="col-span-1">
-            <h2 className="font-bold text-xl underline underline-offset-4 text-gray-500">
+            <h2 className="font-bold text-xl underline underline-offset-4 text-gray-500 ">
               Educations
             </h2>
           </div>
@@ -36,19 +36,18 @@ function ResumePage() {
           </div>
         </div>
       </div>
-      <hr className="text-red-500 h-2" />
 
-      <div className="max-w-7xl mx-auto ">
-        <div className="grid grid-cols-4 py-14">
-          <div className="col-span-1 font-bold text-xl underline underline-offset-4 text-gray-500">
-            work:
-          </div>
+      <hr />
+
+      <div className="md:max-w-7xl mx-auto max-w-sm">
+        <div className="grid md:grid-cols-4 py-14 ">
+          <h3 className="font-bold text-xl underline underline-offset-4 text-gray-500">
+            Works
+          </h3>
           <div className="col-span-3">
             {works.map((work) => (
-              <div key={work.company}>
-                <p className="font-bold text-xl  text-gray-500">
-                  {work.company}
-                </p>
+              <div className="" key={work.title}>
+                <p>{work.company}</p>
                 <p>{work.title}</p>
                 <p>{work.description}</p>
                 <p>{work.years}</p>
@@ -60,8 +59,8 @@ function ResumePage() {
 
       <hr />
 
-      <div className="max-w-7xl mx-auto items-center justify-center">
-        <div className="grid grid-cols-4 py-14">
+      <div className="md:max-w-7xl mx-auto max-w-sm">
+        <div className="grid md:grid-cols-4 py-14 ">
           <div className="font-bold text-xl underline underline-offset-4 text-gray-500">
             skills:
           </div>
