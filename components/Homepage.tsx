@@ -28,7 +28,9 @@ function Homepage() {
         </div>
         <div className="flex space-x-4 items-center justify-center">
           {socialNetwork.map((item) => (
-            <div className="text-center">{item.name}</div>
+            <div className="text-center" key={item.name}>
+              {item.name}
+            </div>
           ))}
         </div>
       </div>
