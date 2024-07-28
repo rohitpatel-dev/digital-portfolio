@@ -1,3 +1,14 @@
+// import About from "@/components/About";
+import Homepage from "@/components/Homepage";
+import AboutPage from "./about/page";
+import ResumePage from "./resume/page";
+
 export default function Home() {
-  return <main className=" max-w-6xl mx-auto text-black">Coding chllnge</main>;
+  return (
+    <>
+      <Homepage />
+      <AboutPage />
+      <ResumePage />
+    </>
+  );
 }

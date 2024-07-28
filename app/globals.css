@@ -67,3 +67,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components{
+  .menu_option {
+    @apply font-semibold  uppercase text-sm hover:text-gray-400;
+  }
+}

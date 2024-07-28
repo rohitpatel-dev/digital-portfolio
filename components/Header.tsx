@@ -18,7 +18,7 @@ function Header() {
   const pathname = usePathname();
 
   return (
-    <header className=" bg-gray-200  ">
+    <header className=" bg-gray-200 md:py-4">
       <div className="md:hidden">
         <Sheet>
           <SheetTrigger className="text-red-500 p-3">
@@ -102,11 +102,11 @@ function Header() {
 
       {/* Desktop size menu */}
 
-      <div className="hidden md:flex max-w-6xl mx-auto space-x-8 items-center justify-center py-2 ">
+      <div className="hidden md:flex max-w-6xl mx-auto space-x-8 items-center justify-center">
         <Link
           className={`${
             pathname == "/" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="/"
         >
           Home
@@ -114,7 +114,7 @@ function Header() {
         <Link
           className={`${
             pathname == "/about" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="/about"
         >
           About
@@ -123,7 +123,7 @@ function Header() {
         <Link
           className={`${
             pathname == "/resume" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="/resume"
         >
           Resume
@@ -131,7 +131,7 @@ function Header() {
         <Link
           className={`${
             pathname == "/works" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="/works"
         >
           Works
@@ -140,7 +140,7 @@ function Header() {
         <Link
           className={`${
             pathname == "/testimonials" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="testimonials"
         >
           testimonials
@@ -149,7 +149,7 @@ function Header() {
         <Link
           className={`${
             pathname == "/contacts" ? "text-red-500" : "text-black "
-          } font-semibold hover:text-gray-300 uppercase`}
+          } menu_option`}
           href="/contacts"
         >
           Contacts
